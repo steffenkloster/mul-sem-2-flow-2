@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cphbusiness Kantinen - Forside</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link href="/assets/css/index.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <nav
+      class="d-flex position-fixed top-0 w-100 justify-content-between py-3 px-5 align-items-center fw-semibold z-2 text-black"
+    >
+      <a href="/">
+        <img src="/assets/images/logo.svg" alt="Logo" />
+      </a>
+
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item">
+          <a href="/">Forside</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/faste-varer.html">Faste varer</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+
+      <i class="bi bi-list fs-2 px-2 point hamburger d-md-none"></i>
+    </nav>
+    <div class="hero">
+      <img
+        src="/assets/images/hero2.jpeg"
+        alt="Hero"
+        class="h-100 w-100 object-fit-cover"
+      />
+      <div class="text text-center text-white w-100">
+        <div class="fs-2 fw-medium d-flex justify-content-center row-cols-md">
+          <div class="bg-navy px-4 py-1">Cphbusiness Kantinen</div>
+        </div>
+        <div class="shadow-black-large fs-05 text-uppercase fw-bolder">
+          Dagens ret
+        </div>
+      </div>
+    </div>
+    <div class="dagens-ret py-5 text-white">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row gap-3 align-items-center">
+          <div class="food z-1 position-relative">
+            <img
+              src="/assets/images/mad.png"
+              class="z-1"
+              alt="Tallerken med mad"
+            />
+            <img
+              src="/assets/images/kylling.png"
+              class="position-absolute kylling opacity-0 meat-stuff"
+              alt="Kyyyyylling"
+            />
+          </div>
+          <div class="d-flex flex-column gap-3 justify-content-center">
+            <!-- <h1 class="fs-5 fw-normal mb-0">Dagens ret</h1> -->
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-lg-start"
+            >
+              <button
+                type="button"
+                onclick="selectDish(event, 'vegetarian');"
+                class="btn btn-light select-dish selected"
+              >
+                Vegetar
+              </button>
+              <button
+                type="button"
+                onclick="selectDish(event, 'meat');"
+                class="btn btn-light select-dish"
+              >
+                Kødret
+              </button>
+            </div>
+            <p class="fs-1 text-uppercase fw-semibold mb-0 line-height-1">
+              Blandede stegte grøntsager m.
+              <span class="whitespace-nowrap">
+                tofu <span class="opacity-0 meat-stuff">& kylling</span>
+              </span>
+            </p>
+            <p class="mb-0">
+              En asiatisk-inspireret wokret, med stegte blandede grøntsager og
+              sprød tofu. Indeholder broccolibuketter, ærter, skåret peberfrugt
+              og champignon, stegt i en sovs med sojasauce, ingefær, hvidløg og
+              chili. <span class="opacity-0 meat-stuff">Og kylling!</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="/assets/images/mad.jpeg"
+            class="object-fit-cover w-100 h-100"
+            alt="Sandwich"
+          />
+        </div>
+        <div class="col-8 py-5">
+          <h1 class="text-uppercase fw-semibold">Faste varer</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            lacinia bibendum pulvinar. Proin ullamcorper massa velit, eget
+            tristique neque volutpat nec. Nam vel nibh mi. Vivamus consectetur
+            nec elit vel facilisis. Aenean tincidunt sit amet metus vitae
+            iaculis. Integer vel dui est. Sed aliquam porta semper. Pellentesque
+            ut diam tellus. Suspendisse potenti. Nulla rhoncus eros quis velit
+            tincidunt consectetur. Vivamus tempor consequat velit vitae
+            suscipit. Suspendisse mi orci, sagittis vel auctor id, interdum
+            tempor nisi. Quisque consequat dui feugiat luctus condimentum.
+            Quisque at tellus eget sem tempus auctor id ut odio.
+          </p>
+          <a href="/faste-varer.html">
+            <button type="button" class="btn btn-dark">Læs mere</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-black p-5 text-white">
+      <div class="container">
+        <div class="d-flex flex-column gap-3">
+          <div><b>Cphbusiness Lyngby</b></div>
+          <div>
+            <div>Nørgaardsvej 30</div>
+            <div>2800 Kongens Lyngby</div>
+          </div>
+
+          <div>
+            <div><b>Åbningstider i kantinen:</b></div>
+            <div>Mandag - fredag fra kl. 08:00 til 13:30</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

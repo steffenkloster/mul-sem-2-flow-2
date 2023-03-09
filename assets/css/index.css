@@ -1,0 +1,392 @@
+body {
+  min-height: 100vh;
+}
+
+nav:not(.always-visible) {
+  filter: brightness(0%) invert(1);
+  transition-property: filter, background-color;
+  transition-duration: 300ms;
+}
+
+nav.always-visible ~ * {
+  margin-top: 5rem !important;
+}
+
+nav.scrolled,
+nav.always-visible {
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  background-color: white;
+}
+
+nav img {
+  width: 3rem;
+}
+
+nav li a {
+  transition-property: opacity;
+  transition-duration: 300ms;
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+}
+
+nav li a:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  position: relative;
+  height: 30rem;
+}
+
+.hero > .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dagens-ret {
+  background-color: #00173b;
+}
+
+.dagens-ret .food {
+  width: 26rem;
+  margin-top: -15rem;
+  margin-bottom: 0rem;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .dagens-ret .food {
+    margin-top: -7rem;
+    margin-bottom: -7rem;
+    max-width: none !important;
+  }
+
+  .food img {
+    max-width: none !important;
+  }
+}
+
+.food img {
+  width: 26rem;
+  max-width: 100%;
+}
+
+.kylling {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 80% !important;
+}
+
+.meat-stuff {
+  transition-property: opacity;
+  transition-duration: 300ms;
+}
+
+.bg-burger {
+  background: url("/assets/images/burger.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact.container {
+  min-height: 100vh;
+}
+
+.bg-yellow-transparent {
+  background-color: rgba(0, 23, 59, 0.5);
+}
+
+form button {
+  transition-property: color, filter !important;
+  transition-duration: 500ms;
+  background-color: #fbb040 !important;
+}
+
+form button:hover {
+  filter: brightness(90%);
+}
+
+.py-10 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.pt-10 {
+  padding-top: 6rem;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.bg-yellow {
+  background-color: #fbb040;
+}
+
+.bg-bluedark {
+  background-color: #00173b;
+}
+
+.bg-bluelight {
+  background-color: #61c5ec;
+}
+
+.box {
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 190px;
+}
+
+.widthbox {
+  width: 10px;
+}
+
+.box p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.kolde-drikke {
+  float: right;
+  margin-right: 6%;
+}
+
+.frokost {
+  margin-left: 15%;
+}
+
+.frugt {
+  margin-left: 19%;
+}
+
+.shadow-black {
+  filter: drop-shadow(1px 1px 0px #000);
+}
+
+.shadow-black-large {
+  filter: drop-shadow(3px 3px 0px #000);
+}
+
+.shadow-white {
+  filter: drop-shadow(1px 1px 0px #fff);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.categories .col .box {
+  box-shadow: inset 999px 999px rgb(0 0 0 / 0%);
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+}
+
+.categories .col .box p {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+.categories .col:hover .box {
+  box-shadow: inset 999px 999px rgb(0 0 0 / 10%);
+}
+
+.categories .col:hover .box p {
+  transform: scale(110%);
+}
+
+button[type="button"].select-dish {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button[type="button"].select-dish::before {
+  content: "\F28A";
+  font-family: bootstrap-icons !important;
+}
+
+button[type="button"].select-dish.selected::before {
+  content: "\F26B";
+  font-family: bootstrap-icons !important;
+}
+
+.fs-05 {
+  font-size: 3.5rem;
+}
+
+.bg-navy {
+  background-color: #00173b;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.fasteheader h1 {
+  text-transform: uppercase;
+  color: #61c5ec;
+  margin-left: 3rem;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: -0.5rem;
+}
+
+.fasteheader h2 {
+  margin-bottom: -11px;
+  margin-left: 3rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 576px) {
+  .fasteheader h1 {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+  }
+
+  .fasteheader h2 {
+    font-size: 4rem;
+    margin-bottom: -14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .fasteheader h1 {
+    font-size: 2.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .fasteheader h2 {
+    font-size: 6rem;
+    margin-bottom: -22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .fasteheader h1 {
+    font-size: 3rem;
+    margin-bottom: -2rem;
+  }
+
+  .fasteheader h2 {
+    font-size: 8rem;
+    margin-bottom: -29px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .fasteheader h1 {
+    font-size: 3.75rem;
+    margin-bottom: -3rem;
+  }
+
+  .fasteheader h2 {
+    font-size: 10rem;
+    margin-bottom: -37px;
+  }
+}
+
+.faste .container .row .col:first-child {
+  border-right: 4px solid #fbb040;
+}
+
+.faste .ontainer .col {
+  margin: 10px;
+}
+
+.none {
+  font-weight: 500;
+}
+
+.faste .col > div:not(.none) {
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+.faste .col > div:not(.none):before {
+  display: flex;
+  align-items: end;
+  height: 100%;
+
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . ";
+}
+.faste .col > div span:first-child {
+  padding-right: 0.33em;
+  background: white;
+}
+.faste .col > div span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+}
+
+.fasteheader {
+  position: relative;
+  z-index: 1;
+}
+
+.fasteheader.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.fasteheader.fixed.absolute {
+  position: absolute;
+}
